@@ -95,4 +95,4 @@ app.post('/api/admin/openai/check',requireAuth,requireAdmin,async(req,res)=>{try
 app.use(express.static(path.join(root,'public')));
 app.get('/{*path}',(req,res)=>res.sendFile(path.join(root,'public','index.html')));
 const port=Number(process.env.PORT)||3000;
-app.listen(port,'127.0.0.1',()=>console.log(`«Банщик» запущен: http://127.0.0.1:${port}`));
+app.listen(port, '0.0.0.0', () => console.log(`«Банщик» запущен на порту ${port}`));
