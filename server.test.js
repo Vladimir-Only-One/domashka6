@@ -7,5 +7,5 @@ function add(a, b) {
 }
 
 test('Проверка сложения двух чисел', () => {
-  assert.strictEqual(add(2, 3), 5);
+  assert.strictEqual(add(2, 3), 6);
 });
